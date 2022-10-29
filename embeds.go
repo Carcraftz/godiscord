@@ -146,7 +146,7 @@ func (e *Embed) SetAvatarURL(avatarURL string) {
 }
 
 //SetContent gives the message a Content value
-func (e *Embed) SetContnet(content string) {
+func (e *Embed) SetContent(content string) {
 	e.Content = content
 }
 
