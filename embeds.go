@@ -136,6 +136,22 @@ func (e *Embed) AddField(Name, Value string, Inline bool) error {
 	return nil
 }
 
+//SetUsername sets the username of the Embed sender
+func (e *Embed) SetUsername(Name string) {
+	e.Username = Name
+}
+//SetAvatarURL sets the Avatar URL of the Embed sender
+func (e *Embed) SetAvatarURL(avatarURL string) {
+	e.AvatarURL = avatarURL
+}
+
+//SetContent gives the message a Content value
+func (e *Embed) SetContnet(content string) {
+	e.Content = content
+}
+
+
+
 //SendToWebhook sents the Embed to a webhook.
 //Returns error if embed was invalid or there was an error posting to the webhook.
 func (e *Embed) SendToWebhook(Webhook string) error {
